@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Handy javascript helper functions.",
   "main": "index.js",
+  "repository": {
+    "url": "https://github.com/popoybvargas/js_hepers"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
