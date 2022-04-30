@@ -1,0 +1,17 @@
+{
+  "name": "@popoyvargas/js_helpers",
+  "version": "1.0.0",
+  "description": "Handy javascript helper functions.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "js",
+    "javascript",
+    "helper",
+    "function"
+  ],
+  "author": "Popoy Vargas",
+  "license": "ISC"
+}
