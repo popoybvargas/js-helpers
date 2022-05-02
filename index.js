@@ -20,3 +20,9 @@ exports.camelCase = (string, separator = '_') =>
 
 	return 'nothing to camelCase';
 };
+
+exports.decodeBase64 = base64 => (Buffer.from(base64, 'base64')).toString('utf-8');
+
+exports.encodeToBase64 = str => (Buffer.from(str, 'utf-8')).toString('base64');
+
+exports.pad = (num, charLength = 2, charPadding = '0') => num.toString().padStart(charLength, charPadding);
