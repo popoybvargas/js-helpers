@@ -1,5 +1,7 @@
 'use strict';
 
+exports.basicAuth = (username, password) => 'Basic ' + Buffer.from(`${username}:${password}`, 'binary').toString('base64');
+
 exports.camelCase = (string, separator = '_') =>
 {
 	if (string)
