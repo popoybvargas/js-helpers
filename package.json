@@ -1,20 +1,25 @@
 {
   "name": "zv-js-helpers",
-  "version": "1.3.1",
+  "version": "2.0.0",
   "description": "Handy javascript helper functions.",
-  "main": "index.js",
+  "main": "dist/index.js",
   "repository": {
     "url": "https://github.com/popoybvargas/js-helpers.git"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npx tsc"
   },
   "keywords": [
     "js",
     "javascript",
     "helper",
-    "function"
+    "function",
+    "typescript"
   ],
   "author": "Popoy Vargas",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.7.16",
+    "typescript": "^4.8.3"
+  }
 }
