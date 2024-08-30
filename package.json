@@ -16,7 +16,9 @@
     "[COMMENT]check-exports": "attw --pack .",
     "check-exports": "attw --pack . --ignore-rules=cjs-resolves-to-esm",
     "test": "vitest run",
-    "dev": "vitest"
+    "dev": "vitest",
+    "prepublishOnly": "npm run ci",
+    "local-release": "changeset version && changeset publish"
   },
   "homepage": "https://github.com/popoybvargas/js-helpers",
   "bugs": {
@@ -34,6 +36,7 @@
   "license": "MIT",
   "devDependencies": {
     "@arethetypeswrong/cli": "^0.15.4",
+    "@changesets/cli": "^2.27.7",
     "prettier": "^3.3.3",
     "typescript": "^5.5.4",
     "vitest": "^2.0.5"
