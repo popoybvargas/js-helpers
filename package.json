@@ -1,0 +1,17 @@
+{
+  "name": "zv-js-helpers",
+  "version": "1.0.0",
+  "description": "Handy javascript helper functions",
+  "keywords": ["javascript", "typescript", "utilities"],
+  "homepage": "https://github.com/popoybvargas/zv-js-helpers",
+  "bugs": {
+    "url": "https://github.com/popoybvargas/zv-js-helpers/issues"
+  },
+  "author": "Popoy Vargas <popoyvargas@gmail.com> (https://teamzv.rocks)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/popoybvargas/zv-js-helpers.git"
+  },
+  "files": ["dist"],
+  "type": "module"
+}
