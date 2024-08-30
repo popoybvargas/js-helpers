@@ -1,17 +1,41 @@
 {
-  "name": "zv-js-helpers",
+  "name": "js-helpers",
   "version": "1.0.0",
   "description": "Handy javascript helper functions",
-  "keywords": ["javascript", "typescript", "utilities"],
-  "homepage": "https://github.com/popoybvargas/zv-js-helpers",
-  "bugs": {
-    "url": "https://github.com/popoybvargas/zv-js-helpers/issues"
+  "keywords": [
+    "javascript",
+    "typescript",
+    "utilities"
+  ],
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "ci": "npm run build && npm run check-format && npm run check-exports && npm run test",
+    "format": "prettier --write .",
+    "check-format": "prettier --check .",
+    "[COMMENT]check-exports": "attw --pack .",
+    "check-exports": "attw --pack . --ignore-rules=cjs-resolves-to-esm",
+    "test": "vitest run",
+    "dev": "vitest"
   },
-  "author": "Popoy Vargas <popoyvargas@gmail.com> (https://teamzv.rocks)",
+  "homepage": "https://github.com/popoybvargas/js-helpers",
+  "bugs": {
+    "url": "https://github.com/popoybvargas/js-helpers/issues"
+  },
+  "author": "Team zV <teamzaravargas@gmail.com> (https://teamzv.rocks)",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/popoybvargas/zv-js-helpers.git"
+    "url": "git+https://github.com/popoybvargas/js-helpers.git"
   },
-  "files": ["dist"],
-  "type": "module"
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "license": "MIT",
+  "devDependencies": {
+    "@arethetypeswrong/cli": "^0.15.4",
+    "prettier": "^3.3.3",
+    "typescript": "^5.5.4",
+    "vitest": "^2.0.5"
+  }
 }
